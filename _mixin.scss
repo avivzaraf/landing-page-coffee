@@ -1,0 +1,80 @@
+@mixin getcontainer($direction, $align, $justify, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+
+
+@mixin getbox($direction, $width, $margin) {
+    display: flex;
+    flex-direction: $direction;
+    max-width: $width;
+    margin-left: $margin;
+}
+
+
+@mixin getform($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+
+
+
+@mixin geth-H($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+
+
+@mixin get-p($size, $padding, $margin, $color) {
+    font-size: $size;
+    padding-bottom: $padding;
+    margin-top: $margin;
+    color: $color;
+}
+
+
+
+
+@mixin getimg($width) {
+    max-width: $width;
+}
+
+
+@mixin getlabel($font, $opacity, $color, $weight, $family) {
+    font-size: $font;
+    opacity: $opacity;
+    color: $color;
+    font-weight: $weight;
+    font-family: $family;
+}
+
+
+@mixin getinput($top, $left, $right, $color, $margin, $height, $width) {
+    border-bottom: 3px solid #020253;
+    border-top: $top;
+    border-left: $left;
+    border-right: $right;
+    background-color: $color;
+    margin-top: $margin;
+    height: $height;
+    max-width: $width;
+}
+
+
+@mixin getsubmit($bacground, $color, $width, $height, $margin, $font, $display, $padding) {
+    background-color: $bacground;
+    color: $color;
+    width: $width;
+    height: $height;
+    margin-top: $margin;
+    font-weight: $font;
+    display: $display;
+    padding: $padding;
+}

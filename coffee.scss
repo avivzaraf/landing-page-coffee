@@ -1,0 +1,42 @@
+@use "mixin" as mixin;
+@use "color" as color;
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+.container {
+    @include mixin.getcontainer(row, center, center, 100px);
+}
+
+.box {
+    @include mixin.getbox(column, 50%, 50px)
+}
+
+form {
+    @include mixin.getform(column)
+}
+
+h1 {
+    @include mixin.geth-H(1.5rem, bold,color.$primary-color)
+}
+
+p {
+    @include mixin.get-p(0.7rem, 10px, -5px, color.$primary-color)
+}
+
+img {
+    @include mixin.getimg(60%)
+}
+
+label {
+    @include mixin.getlabel(0.6rem, 1, black, bold, sans-serif)
+}
+
+input {
+    @include mixin.getinput(none, none, none,color.$secondary-color, 10px, 20px, 230px)
+}
+
+.submit {
+    @include mixin.getsubmit(color.$primary-color, color.$secondary-color, 100px, 30px, 20px, bold, block, 5px)
+}
